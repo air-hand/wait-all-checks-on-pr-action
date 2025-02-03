@@ -1,0 +1,6 @@
+# https://github.com/suzuki-shunsuke/ghalint/blob/main/README.md#configuration-file
+
+excludes:
+  - policy_name: checkout_persist_credentials_should_be_false
+    workflow_file_path: .github/workflows/release.yml
+    job_name: release-please
