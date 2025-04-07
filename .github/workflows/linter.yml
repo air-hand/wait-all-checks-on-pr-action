@@ -25,7 +25,7 @@ jobs:
           persist-credentials: false
 
       - name: setup aqua
-        uses: aquaproj/aqua-installer@e2d0136abcf70b7a2f6f505720640750557c4b33 # v3.1.1
+        uses: aquaproj/aqua-installer@5e54e5cee8a95ee2ce7c04cb993da6dfad13e59c # v3.1.2
         with:
           aqua_version: v2.28.0
           aqua_opts: ""
@@ -63,6 +63,6 @@ jobs:
 
       - name: Lint Codebase
         id: super-linter
-        uses: super-linter/super-linter/slim@85f7611e0f7b53c8573cca84aa0ed4344f6f6a4d # v7.2.1
+        uses: super-linter/super-linter/slim@4e8a7c2bf106c4c766c816b35ec612638dc9b6b2 # v7.3.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
